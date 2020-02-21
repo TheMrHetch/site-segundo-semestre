@@ -1,0 +1,21 @@
+create database eventos;
+use eventos;
+
+create table evento(
+	id int auto_increment primary key,
+	nome char(100),
+	email char(50),
+	evento varchar(2),
+	local varchar(2),
+	hora varchar(5),
+	qtdp int(3)
+);
+
+
+
+
+Tentei criar um php em que criaria o banco automaticamente, porém estava dando erro, mesmo com o código sendo exatamente igual.
+
+"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'use eventos; create table evento( id int auto_increment primary key, nome'"
+
+erro no "use eventos".

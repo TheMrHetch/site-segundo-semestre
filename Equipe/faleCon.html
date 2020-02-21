@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cinema - Creative Section - Fale Conosco</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="faleCon.css">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="cape"></div>
+        <ul>
+            <li> <a href="../index.html">Home</a> </li>
+            <li> <a href="faleCon.html">Fale Conosco</a> </li>
+            <li> <a href="../JoasJosue/formulario.html">Cadastre-se</a> </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="#">Listagens</a>
+                <div class="dropdown-content">
+                    <a href="../JoasJosue/sql1.php">Cadastro de Usuários</a>
+                    <a href="../LucasBernardino/Tabela.php">Ingressos</a>
+                    <a href="../GabrielRamos/listagem.php">Combos</a>
+                    <a href="listaMensagem.php">Fale Conosco</a>
+                    <a href="../AllanLapa/lista.php">Cadastro de filmes</a>
+                    <a href="../GuilhermeRatib/listagemEvento.php">Cadastro de eventos</a>
+                </div>
+            </li>
+            <li> <a href="../GabrielRamos/combos.html">Compre seu combo</a> </li>
+            <li> <a href="../AllanLapa/FormularioAllan.html">Cadastro de filmes</a> </li>
+            <li> <a href="../GuilhermeRatib/cadastroEvento.html">Cadastro de eventos</a> </li>
+        </ul>
+
+        <center><h2>Envie sua mensagem</h2></center>
+
+        <form method="POST" action="faleCon.php" enctype="multipart/form-data">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" maxlength="50">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" placeholder="Digite seu email" maxlength="70">
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar mensagem</button>
+            </div>
+        </form>
+    </body>
+</html>

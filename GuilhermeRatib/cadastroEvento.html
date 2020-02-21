@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<link rel="stylesheet" href="../index.css" type="text/css">
+		<link rel="stylesheet" href="cores.css" type="text/css">
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<title>Cinema - Creative Section - Cadastro de Eventos</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<div class="cape"></div>
+		<ul>
+			<li> <a href="../index.html">Home</a> </li>
+			<li> <a href="../Equipe/faleCon.html">Fale Conosco</a> </li>
+			<li> <a href="../JoasJosue/formulario.html">Cadastre-se</a> </li>
+			<li class="dropdown">
+				<a class="dropbtn" href="#">Listagens</a>
+				<div class="dropdown-content">
+					<a href="../JoasJosue/sql1.php">Cadastro de Usuários</a>
+					<a href="../LucasBernardino/Tabela.php">Ingressos</a>
+					<a href="../GabrielRamos/listagem.php">Combos</a>
+					<a href="../Equipe/listaMensagem.php">Fale Conosco</a>
+					<a href="../AllanLapa/lista.php">Cadastro de filmes</a>
+					<a href="listagemEvento.php">Cadastro de eventos</a>
+				</div>
+			</li>
+			<li> <a href="../GabrielRamos/combos.html">Compre seu combo</a> </li>
+			<li> <a href="../AllanLapa/FormularioAllan.html">Cadastro de filmes</a> </li>
+			<li> <a href="cadastroEvento.html">Cadastro de eventos</a> </li>
+		</ul>
+		<center><h2>Cadastro de Evento - Creative Section</h2></center>
+		<form action="cadastrandoEvento.php"  method="post"  enctype="multipart/form-data">
+	
+		<div>
+			A locação de eventos na Creative Section necessita de diversas informações.  Todas elas estão listadas abaixo - apenas selecione corretamente e a empresa do local selecionado irá verificar seu pedido, respondendo-lhe por E-mail.
+		</div>
+		
+			<div>
+				<label>Nome completo:</label>
+				<input name="nome" type="text" size="50" maxlength="100" placeholder="Digite seu nome.">
+			</div>
+		
+			<div>
+				<label>E-mail:</label>
+					<input name="email" type="text" size="50" maxlength="50" placeholder="exemplo@exemplo.com">
+			</div>
+		
+			<div>
+				<label>Selecione o evento desejado:</label>
+					<select name="evento">
+						<option value="SC" selected>Sala Convencional</option>
+						<option value="SL">Sala de Luxo</option>
+						<option value="PA">Palestra</option>
+						<option value="AN">Aniversário</option>
+					</select>
+			</div>
+		
+			<div>
+				<label>Selecione o local do evento:</label>
+					<select name="local">
+						<option value="TA" selected>Tatuapé</option>
+						<option value="IT">Itaquera</option>
+						<option value="LI">Liberdade</option>
+						<option value="AR">Aricanduva</option>
+					</select>
+			</div>
+		
+			<div>
+				<label>Selecione o horário do evento:</label>
+				<input type="time" name="hora">
+			</div>
+		
+			<div>
+				<label>Seleciona a quantidade de pessoas:</label>
+				<input type="number" name="qtdp" min="50" max="200" placeholder="Mínimo 50 pessoas máximo, 200.">
+			</div>
+		
+			<div class="button">
+				<button type="submit">Enviar proposta</button>
+			</div>
+		</form>
+		
+	</body>
+</html>

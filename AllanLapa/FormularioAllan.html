@@ -1,0 +1,74 @@
+<!DOCTYPE html >
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>Formulario Cadastro - Filme</title>
+        <link rel="stylesheet" href="../index.css" type="text/css">
+        <link rel="stylesheet" href="filmes.css" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+        <div class="cape"></div>
+        <ul>
+            <li> <a href="../index.html">Home</a> </li>
+            <li> <a href="../Equipe/faleCon.html">Fale Conosco</a> </li>
+            <li> <a href="../JoasJosue/formulario.html">Cadastre-se</a> </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="#">Listagens</a>
+                <div class="dropdown-content">
+                    <a href="../JoasJosue/sql1.php">Cadastro de Usuários</a>
+                    <a href="../LucasBernardino/Tabela.php">Ingressos</a>
+                    <a href="../GabrielRamos/listagem.php">Combos</a>
+                    <a href="../Equipe/listaMensagem.php">Fale Conosco</a>
+                    <a href="lista.php">Cadastro de filmes</a>
+                    <a href="../GuilhermeRatib/listagemEvento.php">Cadastro de eventos</a>
+                </div>
+            </li>
+            <li> <a href="../GabrielRamos/combos.html">Compre seu combo</a> </li>
+            <li> <a href="FormularioAllan.html">Cadastro de filmes</a> </li>
+            <li> <a href="../GuilhermeRatib/cadastroEvento.html">Cadastro de filmes</a> </li>
+        </ul>
+		<center><h2>Cadastro de filmes</h2></center>
+			<form action="gravar.php" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="titulo">Título:</label>
+				    <input type="text" id="titulo" name="titulo" maxlength="90" placeholder="Digite o titulo" required>
+                </div>
+                <div>
+                <label for="genero">Gênero:</label>
+				<input type="text" name="genero"
+				maxlength="20 " id="genero" placeholder="Genero" size="30" required>
+                </div>
+
+                <div>
+                    <label for="produtora">Produtora:</label>
+                    <input type="text" name="produtora" maxlength="70" id="produtora" size="30">
+                </div>
+                <div>  
+                    <label for="data_lancamento">Data de lançamento:</label>
+                    <input type="date" name="data_lancamento"
+                    maxlength="15" id="data_lancamento" placeholder="Data de lançamento"
+                    required>
+                </div>
+                <div>
+                    <label for="nacionalidade">Nacionalidade:</label>
+                    <input type="text" name="Nacionalidade"
+                     maxlength="50" id="nacionalidade" placeholder="Nacionalidade"
+                     size="30" required>
+                </div>
+            <div>	
+                <label for="sinopse">Sinopse:</label>
+                <textarea name="sinopse"  id="sinopse" id="sinopse" cols="30" rows="10" maxlength="300"></textarea>
+			    
+            </div>
+            <div>
+				<label for="cartaz">Cartaz do Filme:</label>
+				<input type="file" id="cartaz" name="cartaz">
+			</div>
+
+			<div>
+				<button type="submit">Enviar dados</button>
+            </div>
+			</form>
+	</body>
+</html>

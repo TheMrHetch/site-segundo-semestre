@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cinema - Creative Section - Página Inicial</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="cape"></div>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="Equipe/faleCon.html">Fale Conosco</a> </li>
+            <li> <a href="JoasJosue/formulario.html">Cadastre-se</a> </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="#">Listagens</a>
+                <div class="dropdown-content">
+                    <a href="JoasJosue/sql1.php">Cadastro de Usuários</a>
+                    <a href="LucasBernardino/Tabela.php">Ingressos</a>
+                    <a href="GabrielRamos/listagem.php">Combos</a>
+                    <a href="Equipe/listaMensagem.php">Fale Conosco</a>
+                    <a href="AllanLapa/lista.php">Cadastro de filmes</a>
+                    <a href="GuilhermeRatib/listagemEvento.php">Cadastro de eventos</a>
+                </div>
+            </li>
+            <li> <a href="GabrielRamos/combos.html">Compre seu combo</a> </li>
+            <li> <a href="AllanLapa/FormularioAllan.html">Cadastro de filmes</a> </li>
+            <li> <a href="GuilhermeRatib/cadastroEvento.html">Cadastro de eventos</a> </li>
+        </ul>
+
+        <h2>Clique nos filmes para comprar o ingresso</h2>
+
+        <form action="ingressos/formCompra.php" method="GET" class="Filmes">
+            <input type="image" name="filme" src="imgs/thor.jpg" value="Thor_Ragnarok">
+            <input type="image" name="filme" src="imgs/ligaJ.jpg" value="Liga_da_Justiça">
+            <input type="image" name="filme" src="imgs/bladeRunner.jpg" value="Blade_Runner_2049">
+            <input type="image" name="filme" src="imgs/capitaoCueca.jpg" value="Capitão_Cueca">
+            <input type="image" name="filme" src="imgs/morteParabens.jpg" value="A_Morte_te_dá_parabéns">
+            <input type="image" name="filme" src="imgs/starwars.jpg" value="Star_Wars_VIII">
+            <input type="image" name="filme" src="imgs/aNoiva.jpg" value="A_Noiva">
+        </form>
+    </body>
+</html>

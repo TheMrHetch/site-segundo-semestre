@@ -1,0 +1,15 @@
+CREATE TABLE cadCli(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(50),
+idade TINYINT(2),
+cpf   BIGINT (11),
+rg 	  INT (9),
+sexo  VARCHAR(1),
+email VARCHAR(50),
+vip   TINYINT(1),
+estado 	VARCHAR(2),
+usuario	VARCHAR(20),
+senha	VARCHAR(20),
+pag 	VARCHAR(2),
+promo 	BOOL
+);

@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>Cinema - Creative Section - Cadastro</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../index.css" type="text/css">
+		<link rel="stylesheet" href="usuarios.css" type="text/css">
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+			<div class="cape"></div>
+			<ul>
+				<li> <a href="../index.html">Home</a> </li>
+				<li> <a href="../Equipe/faleCon.html">Fale Conosco</a> </li>
+				<li> <a href="formulario.html">Cadastre-se</a> </li>
+				<li class="dropdown">
+					<a class="dropbtn" href="#">Listagens</a>
+					<div class="dropdown-content">
+						<a href="sql1.php">Cadastro de Usuários</a>
+						<a href="../LucasBernardino/Tabela.php">Ingressos</a>
+						<a href="../GabrielRamos/listagem.php">Combos</a>
+						<a href="../Equipe/listaMensagem.php">Fale Conosco</a>
+						<a href="../AllanLapa/lista.php">Cadastro de filmes</a>
+						<a href="../GuilhermeRatib/listagemEvento.php">Cadastro de eventos</a>
+					</div>
+				</li>
+				<li> <a href="../GabrielRamos/combos.html">Compre seu combo</a> </li>
+				<li> <a href="../AllanLapa/FormularioAllan.html">Cadastro de filmes</a> </li>
+				<li> <a href="../GuilhermeRatib/cadastroEvento.html">Cadastro de eventos</a> </li>
+			</ul>
+		<center><h2>Cadastro</h2></center>
+			<form action="cadastro.php" method="post" enctype="multipart/form-data">
+			
+				<div>
+					<label>Nome:</label>
+						<input type="text" name="nome" maxlength="50" placeholder="Digite seu nome completo" required>
+				</div>
+				<div>
+					<label>Idade:</label>
+						<input type="text" name="idade" maxlength="2" size="5" required pattern="[0-9]+$" placeholder="99+">
+				</div>
+				<div>
+					<label>CPF:</label>
+						<input type="text" name="cpf" maxlength="11" placeholder="CPF" required pattern="[0-9]+$">
+				</div>
+				<div>
+					<label>RG:</label>
+						<input type="text" name="RG" maxlength="9" placeholder="RG"	required pattern="[0-9]+$">
+				</div>
+				<div>
+					<label id="sexo">Masculino:</label>
+						<input type="radio" name="sexo" value="M" checked>
+						<hr class="hrS">
+					<label id="sexo">Feminino:</label>
+						<input type="radio" name="sexo" value="F">
+				</div>
+			
+				<div>
+					<label>E-mail:</label>
+						<input type="text" name="email" maxlength="50" placeholder="Digite seu email aqui" size="30" required>
+				</div>
+				
+				<div>
+					<label>Deseja ser VIP?</label>
+						<select name="vip" id="vip"required>
+							<option selected value="">--Selecione--</option>
+							<option value="0">Não</option>
+							<option value="1">Simples</option>
+							<option value="2">VIP 2</option>
+							<option value="3">VIP GOLD</option>
+							<option value="4">Apoiador</option>
+						</select>
+				</div>
+				<div>
+					<label>Estado:</label>
+						<select name="estados">
+							<option value="AC">Acre</option>
+							<option value="AL">Alagoas</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="ES">Espírito Santo</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do Sul</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RN">Rio Grande do Norte</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="RO">Rondônia</option>
+							<option value="RR">Roraima</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+						</select>
+				</div>
+				<div>
+					<label>Usuário:</label>
+						<input type="texto" name="usuario" maxlength="20" placeholder="Nome de usuario"	required>
+				</div>
+				<div>
+					<label>Senha:</label>
+						<input type="password" name="senha"	maxlength="20" placeholder="Digite sua senha" required>
+				</div>
+				<div>
+					<label>Repita a senha:</label>
+						<input type="password" name="confSenha"	maxlength="20" placeholder="Confirme sua senha"	required>
+				</div>
+				<div>
+					<label>Pagamento:</label>
+						<select name="pag" id="pag">
+							<option value="CC">Cartão de Crédito</option>
+							<option value="CD">Cartão de Débito</option>
+							<option value="BB">Boleto Bancário</option>
+						</select>
+				</div>
+				<div>
+					<label>Newsletter:</label>
+						<input type="checkbox" name="promo" value="1" id="promo" checked>
+				</div>
+				<div class="button">
+					<button type="submit">Cadastrar usuário</button>
+					<button type="reset">Limpar dados</button>
+				</div>
+			</form>
+	</body>
+</html>

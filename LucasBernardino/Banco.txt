@@ -1,0 +1,19 @@
+create database compra;
+
+use compra;
+
+CREATE TABLE  novoingresso (
+  ID int(11) AUTO_INCREMENT PRIMARY KEY,
+  Valor varchar(20),
+  OpLinguagem char(9) ,
+  Quantidade tinyint(7) ,
+  Pagamento char(7),
+  Name text,
+  Cpf varchar(15) ,
+  Cartao text,
+  CodSeg int(3) ,
+  Validade varchar(7),
+  Telefone varchar(15),
+  Celular varchar(15) ,
+  dataDeNascimento varchar(20)
+);

@@ -1,0 +1,35 @@
+form {
+    width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 140px;
+}
+
+input, select {
+    border: 1px solid #999;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
+
+.filme {
+    background-color: grey;
+}

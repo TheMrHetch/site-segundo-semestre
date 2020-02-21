@@ -1,0 +1,35 @@
+form {
+    border: 1px solid #ccc;
+    width: 400px;
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 120px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+input, select {
+    border: 1px solid #999;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.hrS {
+    width: 400px;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
